@@ -1,427 +1,366 @@
+"use client";
+
 import Link from "next/link";
 import { Section } from "../../components/section";
 
 export default function StrategicClarityPage() {
   return (
-    <Section
-      title="Strategic Clarity for Developers"
-      kicker="In a high-volatility environment, investors do not act on lifestyle language alone."
-    >
-      {/* OPENING */}
-      <p
-        style={{
-          fontSize: "16px",
-          lineHeight: 1.95,
-          color: "var(--muted)",
-          maxWidth: "980px",
-        }}
+    <>
+      <Section
+        title="Strategic Clarity for Developers"
+        kicker="In a high-volatility environment, investors do not act on lifestyle language alone."
       >
-        In today’s market, investors are no longer buying property.
-      </p>
+        <p className="sc-intro">
+          In today’s market, investors are no longer buying property.
+        </p>
 
-      <p
-        style={{
-          marginTop: "18px",
-          fontSize: "16px",
-          lineHeight: 1.95,
-          color: "var(--muted)",
-          maxWidth: "980px",
-        }}
-      >
-        They are buying certainty in uncertainty. Structural stability. Confidence in
-        the system behind the asset.
-      </p>
+        <p className="sc-intro">
+          They are buying certainty in uncertainty. Structural stability. Confidence in
+          the system behind the asset.
+        </p>
 
-      <p
-        style={{
-          marginTop: "18px",
-          fontSize: "16px",
-          lineHeight: 1.95,
-          color: "var(--muted)",
-          maxWidth: "980px",
-        }}
-      >
-        Yet most developers are still positioning projects as if nothing has changed.
-        That gap is where opportunities are lost.
-      </p>
+        <p className="sc-intro">
+          Yet most developers are still positioning projects as if nothing has changed.
+          That gap is where opportunities are lost.
+        </p>
 
-      {/* PROBLEM / WHAT I DO */}
-      <div
-        style={{
-          marginTop: "36px",
-          paddingTop: "28px",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-          display: "grid",
-          gridTemplateColumns: "0.9fr 1.1fr",
-          gap: "36px",
-        }}
-      >
-        <div>
-          <div
-            style={{
-              fontSize: "12px",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "var(--muted)",
-              marginBottom: "16px",
-            }}
-          >
-            The Problem
-          </div>
+        <div className="sc-two-col">
+          <div className="sc-col">
+            <div className="sc-eyebrow">The Problem</div>
 
-          <ul
-            style={{
-              color: "var(--muted)",
-              lineHeight: 2,
-              paddingLeft: "18px",
-              margin: 0,
-            }}
-          >
-            <li>Global volatility is rising</li>
-            <li>Capital is becoming more selective</li>
-            <li>Investor psychology is shifting</li>
-            <li>Information noise is distorting perception</li>
-          </ul>
+            <ul className="sc-list">
+              <li>Global volatility is rising</li>
+              <li>Capital is becoming more selective</li>
+              <li>Investor psychology is shifting</li>
+              <li>Information noise is distorting perception</li>
+            </ul>
 
-          <p
-            style={{
-              marginTop: "20px",
-              fontSize: "15px",
-              lineHeight: 1.95,
-              color: "var(--muted)",
-            }}
-          >
-            At the same time, most projects are still positioned around lifestyle,
-            design, and amenities.
-          </p>
-
-          <p
-            style={{
-              marginTop: "20px",
-              fontSize: "15px",
-              lineHeight: 1.95,
-              color: "#EAEAEA",
-            }}
-          >
-            The investor is asking a different question:
-            <br />
-            <span style={{ display: "inline-block", marginTop: "10px" }}>
-              “Will my capital survive what is coming next?”
-            </span>
-          </p>
-        </div>
-
-        <div>
-          <div
-            style={{
-              fontSize: "12px",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "var(--muted)",
-              marginBottom: "16px",
-            }}
-          >
-            What I Do
-          </div>
-
-          <p
-            style={{
-              margin: 0,
-              fontSize: "15px",
-              lineHeight: 1.95,
-              color: "var(--muted)",
-            }}
-          >
-            I help developers reposition their projects within the new global
-            reality.
-          </p>
-
-          <p
-            style={{
-              marginTop: "16px",
-              fontSize: "15px",
-              lineHeight: 1.95,
-              color: "#EAEAEA",
-            }}
-          >
-            Not through marketing.
-            <br />
-            Through strategic reframing.
-          </p>
-
-          <div
-            style={{
-              marginTop: "26px",
-              paddingTop: "22px",
-              borderTop: "1px solid rgba(255,255,255,0.08)",
-            }}
-          >
-            <p
-              style={{
-                margin: 0,
-                fontSize: "15px",
-                lineHeight: 1.95,
-                color: "var(--muted)",
-              }}
-            >
-              This is not about slogans, ads, or visuals.
+            <p className="sc-copy">
+              At the same time, most projects are still positioned around lifestyle,
+              design, and amenities.
             </p>
 
-            <p
-              style={{
-                marginTop: "14px",
-                fontSize: "15px",
-                lineHeight: 1.95,
-                color: "var(--muted)",
-              }}
-            >
-              This is about understanding the system, identifying real investor
-              concerns, aligning your project with macro reality, and building a
-              narrative that holds under pressure.
+            <p className="sc-copy sc-strong">
+              The investor is asking a different question:
+              <br />
+              <span className="sc-quote">“Will my capital survive what is coming next?”</span>
             </p>
           </div>
+
+          <div className="sc-col">
+            <div className="sc-eyebrow">What I Do</div>
+
+            <p className="sc-copy">
+              I help developers reposition their projects within the new global reality.
+            </p>
+
+            <p className="sc-copy sc-strong">
+              Not through marketing.
+              <br />
+              Through strategic reframing.
+            </p>
+
+            <div className="sc-inner-divider">
+              <p className="sc-copy">This is not about slogans, ads, or visuals.</p>
+
+              <p className="sc-copy">
+                This is about understanding the system, identifying real investor
+                concerns, aligning your project with macro reality, and building a
+                narrative that holds under pressure.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* CORE INSIGHT */}
-      <div
-        style={{
-          marginTop: "40px",
-          paddingTop: "28px",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-        }}
-      >
-        <div
-          style={{
-            fontSize: "12px",
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-            color: "var(--muted)",
-            marginBottom: "16px",
-          }}
-        >
-          Core Insight
+        <div className="sc-section-divider">
+          <div className="sc-eyebrow">Core Insight</div>
+
+          <p className="sc-core-insight">
+            In a volatile world, the strongest projects are not the most beautiful
+            ones. They are the ones that make sense in the future.
+          </p>
         </div>
 
-        <p
-          className="h-font"
-          style={{
-            margin: 0,
-            fontSize: "30px",
-            lineHeight: 1.6,
-            fontWeight: 300,
-            maxWidth: "980px",
-          }}
-        >
-          In a volatile world, the strongest projects are not the most beautiful
-          ones. They are the ones that make sense in the future.
-        </p>
-      </div>
+        <div className="sc-offers-grid">
+          <div className="sc-card">
+            <div className="sc-eyebrow">Product 1</div>
 
-      {/* OFFERS */}
-      <div
-        style={{
-          marginTop: "42px",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "18px",
-        }}
-      >
-        {/* PRODUCT 1 */}
-        <div className="card" style={{ padding: "40px" }}>
-          <div
-            style={{
-              fontSize: "12px",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "var(--muted)",
-              marginBottom: "14px",
-            }}
-          >
-            Product 1
+            <div className="sc-offer-title">Strategic Reframing Session</div>
+
+            <p className="sc-copy">
+              A customised strategic intervention designed to identify why investor
+              interest is not converting into action — and to realign communication,
+              narrative, and sales logic accordingly.
+            </p>
+
+            <p className="sc-copy">
+              Prepared based on your current positioning, sales approach, project mix,
+              and market context.
+            </p>
+
+            <ul className="sc-list sc-offer-list">
+              <li>Review of current sales and investor narrative</li>
+              <li>Analysis of hesitation points in the current market</li>
+              <li>Macro-driven reframing of investor communication</li>
+              <li>Clear strategic recommendations for immediate application</li>
+            </ul>
+
+            <p className="sc-price">From USD 5,500</p>
           </div>
 
-          <div className="h-font" style={{ fontSize: "28px" }}>
-            Strategic Reframing Session
+          <div className="sc-card">
+            <div className="sc-eyebrow">Product 2</div>
+
+            <div className="sc-offer-title">Strategic Advisory Layer</div>
+
+            <p className="sc-copy">
+              Ongoing strategic support for developers operating in a high-volatility
+              environment, where investor confidence, timing, and market interpretation
+              require constant recalibration.
+            </p>
+
+            <p className="sc-copy">
+              Up to 20 hours of strategic involvement per month, focused on key
+              decision points, investor-facing logic, and real-time refinement of
+              sales alignment.
+            </p>
+
+            <p className="sc-copy">
+              This is not operational support. I intervene where communication,
+              perception, and decision-making directly affect outcome.
+            </p>
+
+            <p className="sc-price">From USD 10,500 / month</p>
           </div>
+        </div>
 
-          <p
-            style={{
-              marginTop: "16px",
-              fontSize: "15px",
-              lineHeight: 1.9,
-              color: "var(--muted)",
-            }}
-          >
-            A customised strategic intervention designed to identify why investor
-            interest is not converting into action — and to realign communication,
-            narrative, and sales logic accordingly.
-          </p>
+        <div className="sc-section-divider">
+          <div className="sc-eyebrow">Final Thought</div>
 
-          <p
-            style={{
-              marginTop: "16px",
-              fontSize: "15px",
-              lineHeight: 1.9,
-              color: "var(--muted)",
-            }}
-          >
-            Prepared based on your current positioning, sales approach, project mix,
-            and market context.
-          </p>
-
-          <ul
-            style={{
-              marginTop: "18px",
-              color: "var(--muted)",
-              lineHeight: 1.9,
-              paddingLeft: "18px",
-            }}
-          >
-            <li>• Review of current sales and investor narrative</li>
-            <li>• Analysis of hesitation points in the current market</li>
-            <li>• Macro-driven reframing of investor communication</li>
-            <li>• Clear strategic recommendations for immediate application</li>
-          </ul>
-
-          <p
-            style={{
-              marginTop: "20px",
-              fontSize: "15px",
-              color: "#EAEAEA",
-            }}
-          >
-            From USD 5,500
+          <p className="sc-core-insight">
+            The market has already changed.
+            <br />
+            The question is not whether your project is good.
+            <br />
+            The question is:
+            <br />
+            Does it make sense in the world we are entering?
           </p>
         </div>
 
-        {/* PRODUCT 2 */}
-        <div className="card" style={{ padding: "40px" }}>
-          <div
-            style={{
-              fontSize: "12px",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "var(--muted)",
-              marginBottom: "14px",
-            }}
-          >
-            Product 2
-          </div>
+        <div className="sc-cta-row">
+          <Link href="/contact" className="sc-btn">
+            Request Strategic Session →
+          </Link>
 
-          <div className="h-font" style={{ fontSize: "28px" }}>
-            Strategic Advisory Layer
-          </div>
-
-          <p
-            style={{
-              marginTop: "16px",
-              fontSize: "15px",
-              lineHeight: 1.9,
-              color: "var(--muted)",
-            }}
-          >
-            Ongoing strategic support for developers operating in a high-volatility
-            environment, where investor confidence, timing, and market interpretation
-            require constant recalibration.
-          </p>
-
-          <p
-            style={{
-              marginTop: "16px",
-              fontSize: "15px",
-              lineHeight: 1.9,
-              color: "var(--muted)",
-            }}
-          >
-            Up to 20 hours of strategic involvement per month, focused on key
-            decision points, investor-facing logic, and real-time refinement of
-            sales alignment.
-          </p>
-
-          <p
-            style={{
-              marginTop: "16px",
-              fontSize: "15px",
-              lineHeight: 1.9,
-              color: "var(--muted)",
-            }}
-          >
-            This is not operational support. I intervene where communication,
-            perception, and decision-making directly affect outcome.
-          </p>
-
-          <p
-            style={{
-              marginTop: "20px",
-              fontSize: "15px",
-              color: "#EAEAEA",
-            }}
-          >
-            From USD 10,500 / month
-          </p>
+          <Link href="/advisory" className="sc-btn">
+            Back to Advisory →
+          </Link>
         </div>
-      </div>
+      </Section>
 
-      {/* FINAL THOUGHT */}
-      <div
-        style={{
-          marginTop: "46px",
-          paddingTop: "28px",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-        }}
-      >
-        <div
-          style={{
-            fontSize: "12px",
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-            color: "var(--muted)",
-            marginBottom: "16px",
-          }}
-        >
-          Final Thought
-        </div>
+      <style jsx>{`
+        .sc-intro {
+          font-size: 16px;
+          line-height: 1.95;
+          color: var(--muted, #bfc2c6);
+          max-width: 980px;
+          margin: 0;
+        }
 
-        <p
-          className="h-font"
-          style={{
-            margin: 0,
-            fontSize: "30px",
-            lineHeight: 1.6,
-            fontWeight: 300,
-            maxWidth: "980px",
-          }}
-        >
-          The market has already changed.
-          <br />
-          The question is not whether your project is good.
-          <br />
-          The question is:
-          <br />
-          Does it make sense in the world we are entering?
-        </p>
-      </div>
+        .sc-intro + .sc-intro {
+          margin-top: 18px;
+        }
 
-      {/* CTA */}
-      <div
-        style={{
-          marginTop: "52px",
-          paddingTop: "32px",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-          display: "flex",
-          gap: "16px",
-          flexWrap: "wrap",
-        }}
-      >
-        <Link href="/contact" className="btn-outline">
-          Request Strategic Session →
-        </Link>
+        .sc-two-col {
+          margin-top: 36px;
+          padding-top: 28px;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          gap: 36px;
+          align-items: start;
+        }
 
-        <Link href="/advisory" className="btn-outline">
-          Back to Advisory →
-        </Link>
-      </div>
-    </Section>
+        .sc-col {
+          min-width: 0;
+        }
+
+        .sc-eyebrow {
+          font-size: 12px;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: var(--muted, #bfc2c6);
+          margin-bottom: 16px;
+          font-family: Inter, system-ui, sans-serif;
+        }
+
+        .sc-list {
+          color: var(--muted, #bfc2c6);
+          line-height: 1.9;
+          padding-left: 22px;
+          margin: 0;
+          font-size: 15px;
+        }
+
+        .sc-list li + li {
+          margin-top: 8px;
+        }
+
+        .sc-copy {
+          margin-top: 18px;
+          font-size: 15px;
+          line-height: 1.9;
+          color: var(--muted, #bfc2c6);
+          max-width: 100%;
+          overflow-wrap: anywhere;
+          font-family: Inter, system-ui, sans-serif;
+        }
+
+        .sc-strong {
+          color: #eaeaea;
+        }
+
+        .sc-quote {
+          display: inline-block;
+          margin-top: 10px;
+        }
+
+        .sc-inner-divider {
+          margin-top: 26px;
+          padding-top: 22px;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .sc-section-divider {
+          margin-top: 42px;
+          padding-top: 28px;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .sc-core-insight {
+          margin: 0;
+          font-size: 30px;
+          line-height: 1.6;
+          font-weight: 300;
+          max-width: 980px;
+          color: #eaeaea;
+          font-family: "Cormorant Garamond", serif;
+        }
+
+        .sc-offers-grid {
+          margin-top: 42px;
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          gap: 22px;
+          align-items: stretch;
+        }
+
+        .sc-card {
+          min-width: 0;
+          height: 100%;
+          padding: 32px;
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 24px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .sc-offer-title {
+          font-size: 28px;
+          line-height: 1.35;
+          color: #eaeaea;
+          font-family: "Cormorant Garamond", serif;
+          font-weight: 300;
+        }
+
+        .sc-offer-list {
+          margin-top: 18px;
+        }
+
+        .sc-price {
+          margin-top: auto;
+          padding-top: 28px;
+          font-size: 15px;
+          color: #eaeaea;
+          font-family: Inter, system-ui, sans-serif;
+        }
+
+        .sc-cta-row {
+          margin-top: 52px;
+          padding-top: 32px;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          display: flex;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+
+        .sc-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 13px 20px;
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 999px;
+          color: #eaeaea;
+          text-decoration: none;
+          font-size: 13px;
+          letter-spacing: 0.06em;
+          line-height: 1;
+          font-weight: 400;
+          background: transparent;
+          transition: all 160ms ease;
+          font-family: Inter, system-ui, sans-serif;
+        }
+
+        .sc-btn:hover {
+          border-color: rgba(142, 148, 153, 0.55);
+          background: rgba(255, 255, 255, 0.025);
+        }
+
+        @media (max-width: 900px) {
+          .sc-two-col,
+          .sc-offers-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .sc-two-col {
+            gap: 28px;
+          }
+
+          .sc-card {
+            padding: 24px;
+            height: auto;
+          }
+
+          .sc-offer-title {
+            font-size: 24px;
+            line-height: 1.42;
+          }
+
+          .sc-core-insight {
+            font-size: 24px;
+            line-height: 1.55;
+          }
+
+          .sc-cta-row {
+            flex-direction: column;
+            align-items: stretch;
+          }
+
+          .sc-btn {
+            width: 100%;
+          }
+
+          .sc-price {
+            margin-top: 20px;
+            padding-top: 0;
+          }
+        }
+      `}</style>
+    </>
   );
 }
