@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap");
+
+@import "tailwindcss";
+
+:root{
+  --bg: #0C0C0E;
+  --block: #141417;
+  --text: #EAEAEA;
+  --muted: #BFC2C6;
+  --accent: #8E9499;
+  --border: rgba(234,234,234,0.12);
+}
+
+html, body { height: 100%; }
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.page{
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 96px 24px 120px;
+}
+
+.h-font{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.p-muted{
+  color: var(--muted);
+}
+
+a{
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--accent);
+}
+
+.hr{
+  height: 1px;
+  background: var(--border);
+  width: 100%;
+}
+
+.btn-outline{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  transition: border-color 160ms ease, color 160ms ease, transform 160ms ease;
+  font-weight: 400;
+}
+
+.btn-outline:hover{
+  border-color: rgba(142,148,153,0.55);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.btn-outline:active{
+  transform: translateY(0px);
+}
+
+.card{
+  background: var(--block);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
