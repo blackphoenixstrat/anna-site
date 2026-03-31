@@ -84,7 +84,7 @@ export default function ArticlesPage() {
 
 const grid = {
   display: "grid",
-  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
   gap: "24px",
 };
 
