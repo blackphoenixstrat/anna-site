@@ -32,7 +32,7 @@ export default function RealityCheckScalpelPage() {
               fontWeight: 300,
             }}
           >
-            Reality Check — Scalpel Edition
+            Reality Check — UAE Edition
           </h1>
 
           <p

@@ -10,8 +10,6 @@ export default function ArticlesPage() {
       }}
     >
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-        
-        {/* Заголовок */}
         <div style={{ marginBottom: "60px" }}>
           <h1
             style={{
@@ -34,21 +32,12 @@ export default function ArticlesPage() {
               maxWidth: "700px",
             }}
           >
-            A structured body of thought across capital, systems, and human perception.
+            A structured body of thought across capital, systems, technology, and human perception.
           </p>
         </div>
 
-        {/* СЕТКА */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "24px",
-          }}
-        >
-          
-          {/* Money Talks */}
-          <Link href="/articles/money-talks" style={{ textDecoration: "none" }}>
+        <div style={grid}>
+          <Link href="/articles/money-talks" style={link}>
             <div style={card}>
               <h2 style={title}>Money Talks with Anna K</h2>
               <p style={text}>
@@ -58,8 +47,7 @@ export default function ArticlesPage() {
             </div>
           </Link>
 
-          {/* Reality Check UAE */}
-          <Link href="/articles/reality-check-scalpel" style={{ textDecoration: "none" }}>
+          <Link href="/articles/reality-check-scalpel" style={link}>
             <div style={card}>
               <h2 style={title}>Reality Check — UAE Edition</h2>
               <p style={text}>
@@ -67,42 +55,71 @@ export default function ArticlesPage() {
                 represents a new operating model for capital and mobility.
               </p>
             </div>
-            </Link>
+          </Link>
 
-         <Link href="/articles/philosophy-of-perception" style={{ textDecoration: "none" }}>
-  <div style={card}>
-    <h2 style={title}>Philosophy of Perception</h2>
-    <p style={text}>
-      Essays on perception, distortion, and the underlying structures that shape
-      human judgment, morality, and meaning.
-    </p>
-  </div>
-</Link>
+          <Link href="/articles/philosophy-of-perception" style={link}>
+            <div style={card}>
+              <h2 style={title}>Philosophy of Perception</h2>
+              <p style={text}>
+                Essays on perception, distortion, and the underlying structures that shape
+                human judgment, morality, and meaning.
+              </p>
+            </div>
+          </Link>
 
+          <Link href="/articles/on-future-technology-and-beyond" style={link}>
+            <div style={card}>
+              <h2 style={title}>On Future, Technology and Beyond</h2>
+              <p style={text}>
+                Essays on strategic cognition, technological transition, systemic disruption,
+                and the changing role of human value in a volatile world.
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </main>
   );
 }
 
-/* Стили */
+const grid = {
+  display: "grid",
+  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+  gap: "24px",
+};
+
+const link = {
+  textDecoration: "none",
+  display: "block",
+  height: "100%",
+};
+
 const card = {
   padding: "32px",
   border: "1px solid #D8D3C8",
   borderRadius: "16px",
   background: "#FFFFFF",
-  transition: "all 0.2s ease",
+  minHeight: "260px",
+
+  display: "flex",
+  flexDirection: "column" as const,
+  justifyContent: "flex-start",
+
+  boxSizing: "border-box" as const,
 };
 
 const title = {
   fontSize: "24px",
-  marginBottom: "12px",
+  margin: "0 0 12px 0",
   color: "#1F1F1C",
   fontFamily: "Cormorant Garamond, serif",
+  fontWeight: 400,
+  lineHeight: 1.3,
 };
 
 const text = {
   color: "#5C5A55",
   fontSize: "15px",
   lineHeight: 1.7,
+  margin: 0,
 };
